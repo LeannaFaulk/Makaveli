@@ -1,0 +1,114 @@
+/* ------------------------------------------------------------ */
+/* imports and utilities */
+
+/* 3rd-party CSS files */
+@import 'vendor/h5bp-head.css';
+@import 'vendor/normalize.css';
+@import 'vendor/h5bp-tail.css';
+
+/* use a more intuitive box sizing model (http://is.gd/wNVjAo) */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Scale down images and embedded videos so they don't overflow their parents */
+img, object { max-width: 100%; }
+
+/*	Development/layout aid. Remove the comments
+	on this rule in order to draw boxes around DIVs
+	and other elements used for layout. */
+/* 
+div, main, article, section, aside, hgroup, header, footer, address, nav {
+	border: 1px solid rgba(255,0,0,0.15) !important;
+	background: rgba(255,0,0,0.05) !important;		
+}
+*/
+
+
+/* ------------------------------------------------------------ */
+/* start project-specifc styles below this line */
+
+body {
+	font-family: 'cinzel', serif;
+	font-size: 24px;
+	line-height: 1.5em;
+	color: #960008;
+	text-align: center;
+	background-color: #3B3A3A;
+	background-image: url("../img/smoke.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	letter-spacing: 20px;
+}
+
+/*	Generally, you will only want one container element in
+	the document, wrapping around the main content area. 
+	If you have more than one container, you are probably doing
+	something wrong. 	
+*/
+.container {
+	margin-top: 1em;
+	margin-right: auto;
+	margin-bottom: 1em;
+	margin-left: auto;
+	width: 90%;
+	max-width: 2000px;
+/*	border: 5px solid #292828;*/
+	display: grid;
+/*	background-image: url("../img/tupac2.jpg");*/
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.boxes{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.right{
+	grid-column: 4 / 5;
+}
+
+.left {
+	grid-column: 2 / 3;
+}
+
+h1 { 
+	font-size: 86px;
+}
+h2{
+	font-size: 20px;
+	font-family: 'Pirata One', cursive;
+	letter-spacing: 20px;
+	margin-top: 0em;
+}
+
+h3{
+	
+}
+h4{
+	
+}
+
+figure {
+	font-size: 30px;
+	text-align: center;
+	text-indent: 0;
+	margin: 0.5em;
+	padding: 0.5em;
+}
+
+figcaption{
+	margin-top: 0em;
+	margin-bottom: 0em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	font-size: 15px;
+}
+
+em{
+	color: #960008;
+	font-weight: thick;
+	font-style: normal;
+	letter-spacing: 10px;
+}
+
+a:hover{
+	color: white;
+}

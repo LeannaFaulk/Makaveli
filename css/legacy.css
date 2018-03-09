@@ -1,0 +1,126 @@
+/* ------------------------------------------------------------ */
+/* imports and utilities */
+
+/* 3rd-party CSS files */
+@import 'vendor/h5bp-head.css';
+@import 'vendor/normalize.css';
+@import 'vendor/h5bp-tail.css';
+
+/* use a more intuitive box sizing model (http://is.gd/wNVjAo) */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Scale down images and embedded videos so they don't overflow their parents */
+img, object { max-width: 100%; }
+
+/*	Development/layout aid. Remove the comments
+	on this rule in order to draw boxes around DIVs
+	and other elements used for layout. */
+/* 
+div, main, article, section, aside, hgroup, header, footer, address, nav {
+	border: 1px solid rgba(255,0,0,0.15) !important;
+	background: rgba(255,0,0,0.05) !important;		
+}
+*/
+
+
+/* ------------------------------------------------------------ */
+/* start project-specifc styles below this line */
+
+body {
+	font-family: 'cinzel', serif;
+	font-size: 30px;;
+	line-height: 1.5em;
+	color: #D4D2D2;
+	text-align: center;
+	background-color: #3B3A3A;
+	background-image: url("../img/brick.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*	Generally, you will only want one container element in
+	the document, wrapping around the main content area. 
+	If you have more than one container, you are probably doing
+	something wrong. 	
+*/
+.container {
+	margin-top: 1em;
+	margin-right: auto;
+	margin-bottom: 1em;
+	margin-left: auto;
+	width: 90%;
+	max-width: 2000px;
+	/*border: 5px solid #eee;*/
+	display: grid;
+	grid-column: 2 / 4;
+	/*background-image: url("../img/back.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;*/
+}
+
+
+h1 { 
+	font-size: 75px;
+	letter-spacing: 7px;
+	color: #960008;
+}
+h2{
+	font-size: 25px;
+	font-family: 'Pirata One', cursive;
+	letter-spacing: 0.5em;
+	margin-top: 0em;
+	line-height: 2px;
+}
+
+h3{
+	text-align: center;
+	font-family: 'Bad Script', cursive;
+	font-size: 30px;
+	line-height: 1.2em;
+	grid-column: 3 / 3;
+	text-align: center;
+	color: #960008;
+}
+
+h4{
+	font-family: 'cinzel', serif;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	grid-column: 2 / 5 ;
+	color: #960008;
+}
+
+p{
+	font-family: 'PT Sans Narrow', sans-serif; 
+	font-size: 18px;
+	text-align: left;
+	grid-column: 2 / 5 ;
+}
+
+.story-body{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 1em;
+}
+
+.sidebar{
+	grid-column: 6 / 6;
+	margin-top: 25em;
+	font-size: 20px;
+	color: #960008;
+}
+
+.story-text{
+	grid-column: 2 / 5;
+}
+
+a{
+	color: #D4D2D2;
+}
+
+a:hover{
+	color: #960008;
+}
+
+
